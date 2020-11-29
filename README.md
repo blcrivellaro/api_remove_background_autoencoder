@@ -63,12 +63,17 @@ gunicorn -b 0.0.0.0:3030 api_remove_background:app
 
 O modelo autoencoder foi treinado utilizando o Google Colab, conforme modelo_autoencoder.ipynb.
 
-<b> 7.1 Exemplos de imagens utilizadas no treinamento </b>
+<b> 7.1 Exemplos de imagens utilizadas no treinamento do modelo autoencoder </b>
+
+![exemplos_imagens_treinamento](https://user-images.githubusercontent.com/56976250/100552468-21335f80-3266-11eb-90f6-7ac1af676aee.png)
 
 
 <b> 7.2 Evolução do erro médio do quadrático em relação as épocas </b>
 
+![loss_mse_treinamento](https://user-images.githubusercontent.com/56976250/100552469-21cbf600-3266-11eb-8689-b333ace22792.png)
+
 
 <b> 7.3 Teste do modelo autoencoder para remoção de background </b>
 
+![exemplos_imagens_teste](https://user-images.githubusercontent.com/56976250/100552467-20023280-3266-11eb-9d82-bdfae650770e.png)
 
