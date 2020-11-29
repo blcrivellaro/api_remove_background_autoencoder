@@ -1,6 +1,6 @@
 # api_remove_background_autoencoder
 
-API para remoção de background em imagens utilizando autoencoder.
+API para remoção de background de imagens com ruídos utilizando autoencoder.
 
 ### <b> 1. Descrição API </b>  
 
