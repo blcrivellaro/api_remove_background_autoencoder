@@ -8,7 +8,7 @@ A API recebe uma imagem codificada em base 64 por meio de um JSON com a chave im
 
 <ol>
 <li> Remove o background da imagem utilizando autoencoder; </li>
-<li> Salva a data e hora da requisição, juntamente com as strings base 64 da imagem original e da imagem processada em um banco de dados MySQL, database ImagensAPi ; </li>
+<li> Salva a data e hora da requisição, juntamente com as strings base 64 da imagem original e da imagem processada em um banco de dados MySQL; </li>
 <li> Retorna a string base 64 da imagem após remoção do background por meio de um JSON com a chave imgb64_clean. </li>
 </ol>
 
