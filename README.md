@@ -47,7 +47,13 @@ codigo_retorno | mensagem                                                  | des
 2              | Chave imgb64_dirty não encontrada                         | JSON não possui a chave imgb64_dirty
 3              | Problema na string base 64 referente a chave imgb64_dirty | String base64 referente a chave imgb64_dirty está corrompida
 
-### <b> 6. Execução da API </b>
+### <b> 6. Instalações necessárias </b>
+
+```yaml
+pip install -r requirements.txt
+```
+
+### <b> 7. Execução da API </b>
 
 Para execução da API pode-se utilizar o server do Flask (recomendado somente para ambientes de desenvolvimento):
 
@@ -59,21 +65,21 @@ Para ambientes de produção pode-se utilizar um server WSGI, como Gunicorn, Gev
 ```yaml
 gunicorn -b 0.0.0.0:3030 api_remove_background:app
 ```
-### <b> 7. Treinamento do modelo autoencoder </b>
+### <b> 8. Treinamento do modelo autoencoder </b>
 
 O modelo autoencoder foi treinado utilizando o Google Colab, conforme modelo_autoencoder.ipynb.
 
-<b> 7.1 Exemplos de imagens utilizadas no treinamento do modelo autoencoder </b>
+<b> 8.1 Exemplos de imagens utilizadas no treinamento do modelo autoencoder </b>
 
 ![exemplos_imagens_treinamento](https://user-images.githubusercontent.com/56976250/100552468-21335f80-3266-11eb-90f6-7ac1af676aee.png)
 
 
-<b> 7.2 Evolução do erro médio do quadrático em relação as épocas </b>
+<b> 8.2 Evolução do erro médio do quadrático em relação as épocas </b>
 
 ![loss_mse_treinamento](https://user-images.githubusercontent.com/56976250/100552469-21cbf600-3266-11eb-8689-b333ace22792.png)
 
 
-<b> 7.3 Teste do modelo autoencoder para remoção de background </b>
+<b> 8.3 Teste do modelo autoencoder para remoção de background </b>
 
 ![exemplos_imagens_teste](https://user-images.githubusercontent.com/56976250/100552467-20023280-3266-11eb-9d82-bdfae650770e.png)
 
